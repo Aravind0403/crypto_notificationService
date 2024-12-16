@@ -8,7 +8,7 @@ class NotificationBase(BaseModel):
     trading_volume : float
     message:str
 class NotificationCreate(NotificationBase):
-    status: Optional [str] = None
+    status: Optional [str] = "pending"
     pass
 class NotificationUpdate(BaseModel):
     price: Optional [float] = None

@@ -8,6 +8,6 @@ Session_local = sessionmaker(autoflush=False, bind=engine)
 
 ## intilasing the dataabse :
 
-Base.metadata.create(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 
